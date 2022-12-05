@@ -4,12 +4,16 @@ import { ReactiveFormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatStepperModule } from '@angular/material/stepper'
+import { MatIconModule } from '@angular/material/icon'
 
 @NgModule({
   imports: [
     BrowserModule,
     ReactiveFormsModule,
     BrowserAnimationsModule,
+    MatStepperModule,
+    MatIconModule
   ],
   declarations: [
     AppComponent
