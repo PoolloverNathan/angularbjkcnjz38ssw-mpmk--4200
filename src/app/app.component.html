@@ -1,4 +1,35 @@
-<form class="container">home works!</form>
+<form class="container mat-app-background">
+  <mat-card class="mar">
+    <mat-card-content>
+      <mat-stepper orientation="vertical" class="wide" linear>
+        <mat-step label="cat">
+          <mat-card>
+            <mat-card-content>
+              step
+              <app-step-nav [continue]="true"></app-step-nav>
+            </mat-card-content>
+          </mat-card>
+        </mat-step>
+        <mat-step label="dog">
+          <mat-card>
+            <mat-card-content>
+              step
+              <app-step-nav [continue]="true"></app-step-nav>
+            </mat-card-content>
+          </mat-card>
+        </mat-step>
+        <mat-step label="cat">
+          <mat-card>
+            <mat-card-content>
+              step
+              <app-step-nav last continue></app-step-nav>
+            </mat-card-content>
+          </mat-card>
+        </mat-step>
+      </mat-stepper>
+    </mat-card-content>
+  </mat-card>
+</form>
 
 <!-- 
 Copyright Google LLC. All Rights Reserved.

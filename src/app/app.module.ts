@@ -6,6 +6,9 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatStepperModule } from '@angular/material/stepper'
 import { MatIconModule } from '@angular/material/icon'
+import { MatButtonModule } from '@angular/material/button';
+import { MatCardModule } from '@angular/material/card';
+import { StepNavComponent } from './step-nav/step-nav.component'
 
 @NgModule({
   imports: [
@@ -13,11 +16,14 @@ import { MatIconModule } from '@angular/material/icon'
     ReactiveFormsModule,
     BrowserAnimationsModule,
     MatStepperModule,
-    MatIconModule
+    MatIconModule,
+    MatButtonModule,
+    MatCardModule
   ],
   declarations: [
-    AppComponent
-  ],
+    AppComponent,
+    StepNavComponent,
+  ],  
   bootstrap: [
     AppComponent
   ]

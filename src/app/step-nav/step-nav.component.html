@@ -1,0 +1,22 @@
+<div>
+  <button type="button" mat-icon-button matStepperPrevious>
+    <mat-icon>arrow-left</mat-icon>
+  </button>
+  <button
+    type="button"
+    [disabled]="stopHere"
+    *ngIf="last === false"
+    mat-icon-button
+    matStepperNext
+  >
+    <mat-icon>arrow-right</mat-icon>
+  </button>
+  <button
+    type="submit"
+    [disabled]="stopHere"
+    mat-raised-button
+    *ngIf="last !== false"
+  >
+    SUBMIT
+  </button>
+</div>

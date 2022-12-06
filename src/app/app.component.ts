@@ -10,11 +10,11 @@ export class AppComponent {
   form = new FormArray([
     new FormGroup({
       nameFirst: new FormControl(''),
-      nameLast: new FormControl(''),
+      nameLast:  new FormControl(''),
     }),
     new FormGroup({
-      username: new FormControl(''),
-      email: new FormControl(''),
+      username:  new FormControl(''),
+      email:     new FormControl(''),
     }),
   ]);
 }
